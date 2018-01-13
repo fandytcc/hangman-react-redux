@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import Title from './components/Title'
 
 import './App.css';
 
@@ -8,7 +7,7 @@ class App extends Component {
     return (
       <div className="App">
         <header className="App-header">
-          <Title content="Hangman Game" />
+          <h1> Hangman Game </h1>
         </header>
 
         <main>
