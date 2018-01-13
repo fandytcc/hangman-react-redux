@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-
+import GameBoard from './containers/GameBoard'
 import './App.css';
 
 class App extends Component {
@@ -11,9 +11,9 @@ class App extends Component {
         </header>
 
         <main>
-        <p className="App-intro">
-
-        </p>
+        <div className="hangman">
+          <GameBoard />
+        </div>
         </main>
       </div>
     );

@@ -1,5 +1,6 @@
 import React, { PureComponent } from 'react'
 import UserInput from '../components/UserInput'
+import HangmanDisplay from '../components/HangmanDisplay'
 
 class GameBoard extends PureComponent {
   // renderRecipe(recipe, index) {
@@ -8,10 +9,13 @@ class GameBoard extends PureComponent {
 
   render() {
     return(
-      <div className="game wrapper">
-        <UserInput />
-          // { this.props.recipes.map(this.renderRecipe) }
-      </div>
+      <main>
+        <div className="game-wrapper">
+          <UserInput />
+          <GuessDisplay />
+          <HangmanDisplay />
+        </div>
+      </main>
     )
   }
 }

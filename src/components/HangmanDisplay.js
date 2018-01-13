@@ -1,16 +1,13 @@
 import React, { PureComponent } from 'react'
-import PropTypes from 'prop-types'
-import images from '../fixture/images'
+import images from '../fixtures/images'
+import Hangman0 from '../images/hangman0.png'
 
 class HangmanDisplay extends PureComponent {
-  static propTypes = {
-    photo: PropTypes.string
-  }
 
   render() {
     return (
-      <div>
-        <img src={ this.props.}
+      <div className="hangman-image">
+        <img src= { Hangman0 } alt="hangman images"/>
       </div>
     )
   }
